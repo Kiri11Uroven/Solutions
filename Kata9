@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public static List<Object> filterList(final List<Object> list) {
+        ArrayList arrayList = new ArrayList();
+        for (Object obj:list) {
+            if(obj instanceof Integer) {
+                arrayList.add(obj);
+            }
+        }return arrayList;
+    }
